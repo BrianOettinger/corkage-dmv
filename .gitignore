@@ -7,3 +7,14 @@ desktop.ini
 .vscode/
 .idea/
 *.swp
+
+# Claude Code local settings — not part of the website
+.claude/
+
+# Private working documents — must NOT be published to the live site
+*.docx
+*.xlsx
+*.pdf
+
+# Unused leftover asset
+favicon.svg
