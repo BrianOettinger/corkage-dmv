@@ -579,6 +579,10 @@
     line-height: 1.65;
   }
 
+  a.edu-card { display: block; text-decoration: none; transition: border-color 0.2s; }
+  a.edu-card:hover { border-color: var(--gold); }
+  .edu-guides { margin-top: 3rem; }
+
   .law-box {
     border: 1px solid rgba(201,168,76,0.35);
     border-left: 3px solid var(--gold);
@@ -836,7 +840,7 @@
   <ul class="nav-links" onclick="this.classList.remove('open')">
     <li><a href="#directory">Directory</a></li>
     <li><a href="#how-it-works">How It Works</a></li>
-    <li><a href="guides.html">Guides</a></li>
+    <li><a href="/guides">Guides</a></li>
     <li><a href="#suggest">Suggest a Restaurant</a></li>
   </ul>
   <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
@@ -888,7 +892,7 @@
     <h2 class="section-title">Restaurant Directory</h2>
     <span class="section-sub">Montgomery County, MD &amp; Washington, DC · Updated June 2026</span>
   </div>
-  <p style="font-size:13px;color:var(--mist);margin:-0.75rem 0 1.25rem;">Neighborhood guides: <a href="bethesda.html" style="color:var(--wine);font-weight:500;text-decoration:none;">Bethesda</a> · <a href="silver-spring.html" style="color:var(--wine);font-weight:500;text-decoration:none;">Silver Spring</a> &rarr;</p>
+  <p style="font-size:13px;color:var(--mist);margin:-0.75rem 0 1.25rem;">Neighborhood guides: <a href="/bethesda" style="color:var(--wine);font-weight:500;text-decoration:none;">Bethesda</a> · <a href="/silver-spring" style="color:var(--wine);font-weight:500;text-decoration:none;">Silver Spring</a> &rarr;</p>
   <div class="restaurant-grid" id="grid"></div>
 </main>
 
@@ -936,6 +940,37 @@
       <div class="law-box-label">Montgomery County, MD · Official Regulation</div>
       <div class="law-box-text">
         Under Montgomery County ABS Bulletin LRE 002, restaurants, clubs, and hotels holding a beer and wine or beer, wine, and liquor Class B or Class C license <strong>may add a Wine Corkage Permit at no additional cost.</strong> Each establishment decides independently whether to allow carry-in wine and whether to charge a fee. There is no county-imposed cap on corkage fees. The wine brought on premises must not appear on the licensee's wine list. Consumption requires a meal order. Unused wine may be re-corked and removed by the guest.
+      </div>
+    </div>
+
+    <div class="edu-guides">
+      <div class="edu-eyebrow">Guides</div>
+      <h2 class="edu-title">BYOB Guides for the DMV</h2>
+      <div class="edu-grid">
+        <a class="edu-card" href="/michelin-byob">
+          <div class="edu-card-title">BYOB at Michelin-Starred Restaurants in DC</div>
+          <div class="edu-card-text">Jônt, Xiquet, and Mita welcome your bottle. Here's what they charge and how to do it gracefully.</div>
+        </a>
+        <a class="edu-card" href="/wine-spectator-byob">
+          <div class="edu-card-title">Wine Spectator Award Restaurants That Allow BYOB</div>
+          <div class="edu-card-text">Where a celebrated cellar meets a corkage policy, with verified fees across the DMV.</div>
+        </a>
+        <a class="edu-card" href="/amex-resy-byob">
+          <div class="edu-card-title">Stack the Amex Platinum Resy Credit with BYOB</div>
+          <div class="edu-card-text">Save on the wine with corkage and on the food with up to $100 a quarter back.</div>
+        </a>
+        <a class="edu-card" href="/chase-sapphire-byob">
+          <div class="edu-card-title">Chase Sapphire Reserve Dining Credit + BYOB in DC</div>
+          <div class="edu-card-text">How to combine the $300 Exclusive Tables credit with bringing your own bottle.</div>
+        </a>
+        <a class="edu-card" href="/tock-resy-byob">
+          <div class="edu-card-title">Tock Is Now Part of Resy</div>
+          <div class="edu-card-text">What the merge means for BYOB diners, and which former Tock restaurants now earn the Amex credit.</div>
+        </a>
+        <a class="edu-card" href="/what-to-bring">
+          <div class="edu-card-title">What to Bring When You BYOB</div>
+          <div class="edu-card-text">The small kit that makes it effortless: wine totes, a reliable corkscrew, and travel protection.</div>
+        </a>
       </div>
     </div>
   </div>
