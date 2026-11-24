@@ -1005,6 +1005,8 @@
       </div>
       <textarea placeholder="Any additional details — hours, restrictions, recent experience…" id="s-notes" name="notes"></textarea>
       <input type="email" placeholder="Your email (optional — only if you'd like a follow-up)" id="s-email" name="email">
+      <!-- Spam honeypot: hidden from people; Formspree drops any submission where a bot fills it in. -->
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
       <button type="submit" class="submit-btn">Submit Update</button>
     </form>
   </div>
